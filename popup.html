@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 40px 300px 50px;
+        }
+        .grid-item-1 {
+            margin: auto;
+
+        }
+        .grid-item-2 {
+        margin-top: auto;
+        margin-bottom: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .grid-item-3 {
+            margin-top: auto;
+            margin-bottom: 9px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .checkbox {
+            margin-bottom: 4px;
+            margin: auto;
+        }
+        #submit_button {
+            width: 350px;
+            background-color: #008CBA;
+            margin: auto;
+            color: white;
+            border-radius: 8px;
+        }
+        .submit_button {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin: auto;
+        }
+        .query{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<script src="popup.js"> </script>
+
+<div class="grid-container" id="grid-container">
+    <div class="grid-item-1">
+        <img src = "/images/google_logo.png" alt = "Google search", width="30px", height="30px">
+    </div>
+    <div class="grid-item-2">
+        <form>
+        <label for="Search Query">Search Query</label>
+        <input type="text" class="query" name="Search Query" id="google_search_query" placeholder="Google">
+    </div>
+    <div class="grid-item-3">
+        <input type="submit" value="Search" id="google_search_button">
+        </form>
+    </div>
+
+    <div class="grid-item-1">
+        <img src = "/images/amazon_logo.png" alt = “Amazon search", width="30px", height="30px">
+    </div>
+    <div class="grid-item-2">
+        <form>
+            <label for="Search Query">Search Query</label>
+            <input type="text" class="query" name="Search Query" id="amazon_search_query" placeholder="Amazon">
+    </div>
+    <div class="grid-item-3">
+        <input type="submit" value="Search" id="amazon_search_button">
+        </form>
+    </div>
+
+    <div class="grid-item-1">
+        <img src = "/images/youtube_logo.png" alt = “Youtube search", width="30px", height="30px">
+    </div>
+    <div class="grid-item-2">
+        <form>
+            <label for="Search Query">Search Query</label>
+            <input type="text" class="query" name="Search Query" id="youtube_search_query" placeholder="YouTube">
+    </div>
+    <div class="grid-item-3">
+        <input type="submit" value="Search" id="youtube_search_button">
+        </form>
+    </div>
+
+    <div class="grid-item-1">
+        <img src = "/images/reddit_logo.png" alt = “reddit search", width="30px", height="30px">
+    </div>
+    <div class="grid-item-2">
+        <form>
+            <label for="Search Query">Search Query</label>
+            <input type="text" class="query" name="Search Query" id="reddit_search_query" placeholder="Reddit">
+    </div>
+    <div class="grid-item-3">
+        <input type="submit" value="Search" id="reddit_search_button">
+        </form>
+    </div>
+
+    <div class="grid-item-1">
+        <img src = "/images/google_images_logo.png" alt = “reddit search", width="30px", height="30px">
+    </div>
+    <div class="grid-item-2">
+        <form>
+            <label for="Search Query">Search Query</label>
+            <input type="text" class="query" name="Search Query" id="google_image_search_query" placeholder="Google Images">
+    </div>
+    <div class="grid-item-3">
+        <input type="submit" value="Search" id="google_image_search_button">
+        </form>
+    </div>
+
+
+    <div class="submit_button">
+        <form>
+        <input type="submit" value="Edit Shortcuts" id="submit_button">
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

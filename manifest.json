@@ -1,0 +1,42 @@
+{
+  "name":  "Website Search",
+  "version" : "1.0",
+  "description": "Quick way to search many websites",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions" : ["storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Quick Website Search"
+  },
+    "commands": {
+      "Google" : {
+        "suggested_key": {
+          "default": "Alt+G"
+        },
+        "description": "Search Google"
+      },
+  "Amazon" : {
+    "suggested_key": {
+      "default": "Alt+A"
+    },
+    "description": "Search Amazon"
+  },  "YouTube" : {
+        "suggested_key": {
+          "default": "Alt+Y"
+        },
+        "description": "Search Youtube"
+      },  "Reddit" : {
+        "description": "Search Reddit"
+      },  "Google-Images" : {
+        "suggested_key": {
+          "default": "Alt+P"
+        },
+        "description": "Search Google Images"
+      }
+    },
+  "permissions": ["tabs"]
+}
